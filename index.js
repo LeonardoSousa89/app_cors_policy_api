@@ -14,7 +14,7 @@ app.listen(process.env.PORT || _PORT,()=>{
 })
 
 app.use((req,res,next) =>{
-    res.header('Accesss-Control-Allow-Origin','*')
+    res.header('Accesss-Control-Allow-Origin','https://app-cors-policy-app.herokuapp.com/')
     res.header('Accesss-Control-Allow-Methods','GET,POST,PUT,DELETE')
     app.use(cors())
     next()
